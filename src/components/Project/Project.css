@@ -1,0 +1,9 @@
+.project {
+  display: inline-block;
+  max-width: 300px;
+  margin: 10px;
+}
+img {
+  max-width: 200px;
+  height: auto;
+}

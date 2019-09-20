@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
+import Projects from "./components/Projects/Projects";
 import "./App.css";
 
-class App extends React.Component {
+class App extends Component {
   state = { displayBio: false };
 
   toggleDisplayBio = () => {
@@ -32,6 +33,8 @@ class App extends React.Component {
             <button onClick={this.toggleDisplayBio}>Read more</button>
           </div>
         )}
+        <hr />
+        <Projects />
       </div>
     );
   }
