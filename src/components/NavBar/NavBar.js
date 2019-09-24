@@ -12,15 +12,37 @@ class NavBar extends Component {
         sticky="top"
         expand="lg"
       >
-        <Navbar.Brand href="#">
-          Gabriel <span>\></span>
+        <Navbar.Brand href="#top">
+          <span>--></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          />Gabriel
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#top">/>Top</Nav.Link>
-            <Nav.Link href="#projects">/>Projects</Nav.Link>
-            <Nav.Link href="#contact">/>Contact</Nav.Link>
+            <Nav.Link href="#top">
+              <span>/></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              />Top
+            </Nav.Link>
+            <Nav.Link href="#projects">
+              <span>/></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              />Projects
+            </Nav.Link>
+            <Nav.Link href="#contact">
+              <span>/></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              />Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
