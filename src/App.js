@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Projects from "./components/Projects/Projects";
 import NavBar from "./components/NavBar/NavBar";
-import { Button } from "react-bootstrap";
 import Tilt from "react-vanilla-tilt";
 import "./App.css";
 import SocialProfiles from "./components/SocialProfiles/SocialProfiles";
@@ -19,51 +18,71 @@ class App extends Component {
   }
 
   render() {
-    const ifHeaderZero = `_ const create = yourIdea => {`;
-    const ifHeaderOne = `___ if (simple && universal && powerful) {`;
-    const ifHeaderTwo = `_____ return true;`;
-    const ifHeaderThree = `___ } else { create(yourIdea); }}`;
-    const skills = `Skills: ['HTML5/CSS4/JS', 'React.js', 'Bootstrap4', 'Node.js', 'Git/Github', 'npm/yarn']`;
+    const ifHeaderZero = `_ _ const create = yourIdea => {`;
+    const ifHeaderOne = `_ _ _ if (simple && universal && powerful) {`;
+    const ifHeaderTwo = `_ _ _ _ return true;`;
+    const ifHeaderThree = `_ _ } else { create(yourIdea); }}`;
+    const skills = `['HTML5/CSS4/JS', 'React.js', 'Bootstrap4', 'Node.js', 'Git/Github', 'npm/yarn']`;
     return (
       <div className="App">
         <header>
           <NavBar />
-          <h1>-->Hello!{"<--"}</h1>
-          <h3>-->My name is Gabriel Lupu, and I'm a web developer.{"<--"}</h3>
-          <Tilt
-            style={{
-              backgroundColor: "transparent"
-            }}
-            className="headerCard"
-            options={{ reverse: false }}
-          >
-            <div className="headerCard">
-              <p className="headerCardContent">
-                {ifHeaderZero}
+          <div className="landing">
+            <div>
+              <h1 style={{ fontSize: "5rem" }}>
+                <span>H</span>
+                <span>e</span>
+                <span>l</span>
+                <span>l</span>
+                <span>o</span>
+                <span>!</span>
+              </h1>
+              <h3 style={{ fontSize: "2.5rem" }}>
+                -->My name is Gabriel Lupu,
                 <br />
-                {ifHeaderOne}
-                <br />
-                {ifHeaderTwo}
-                <br />
-                {ifHeaderThree}
-              </p>
+                and I'm a web developer.{"<--"}
+              </h3>
             </div>
-          </Tilt>
+            <Tilt
+              onClick={this.toggleDisplayBio}
+              style={{
+                backgroundColor: "transparent",
+                margin: "2%"
+              }}
+              className="headerCard"
+              options={{ reverse: false }}
+            >
+              <div className="headerCard">
+                <h3 className="headerCardContent">
+                  {ifHeaderZero}
+                  <br />
 
+                  {ifHeaderOne}
+                  <br />
+
+                  {ifHeaderTwo}
+                  <br />
+
+                  {ifHeaderThree}
+                </h3>
+              </div>
+            </Tilt>
+          </div>
           {this.state.displayBio ? (
             <div className="bio">
               <p>
-                {skills}
-                <br />
+                Skills: <span style={{ color: "#2195f3" }}>{skills}</span>
+              </p>
+              <p>
                 I live in Iași, Romania, and code everyday.
                 <br />
                 My favorite language is JavaScript, I think React.js is awesome
                 and I'm always grateful for the opportunity to work on
                 meaningful projects.
                 <br />
-                Besides coding I also love meditation and travels.
+                Besides coding I also love meditation and coffee.
               </p>
-              <a href="#" onClick={this.toggleDisplayBio}>
+              <a href="#/" onClick={this.toggleDisplayBio}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -73,7 +92,7 @@ class App extends Component {
             </div>
           ) : (
             <div className="bio">
-              <a href="#" onClick={this.toggleDisplayBio}>
+              <a href="#/" onClick={this.toggleDisplayBio}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -83,8 +102,9 @@ class App extends Component {
             </div>
           )}
         </header>
-        <Projects name="projects" />
-        <SocialProfiles id="contact" />
+        <hr id="projects" />
+        <Projects />
+        <SocialProfiles />
       </div>
     );
   }

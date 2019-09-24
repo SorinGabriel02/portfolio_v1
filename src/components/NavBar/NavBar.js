@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Button, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "./NavBar.css";
 
 class NavBar extends Component {
@@ -9,7 +9,7 @@ class NavBar extends Component {
         className="navbar"
         variant="dark"
         collapseOnSelect
-        sticky="top"
+        fixed="top"
         expand="lg"
       >
         <Navbar.Brand href="#top">
