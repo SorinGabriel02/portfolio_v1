@@ -6,14 +6,14 @@ import "./SocialProfiles.css";
 class SocialProfiles extends Component {
   render() {
     return (
-      <div>
+      <footer className="socialProfiles">
         <h3>Get in Touch</h3>
-        <div className="socialProfiles">
+        <div className="profile">
           {SOCIAL_PROFILES.map(profile => {
             return <SocialProfile key={profile.id} profile={profile} />;
           })}
         </div>
-      </div>
+      </footer>
     );
   }
 }

@@ -19,7 +19,7 @@ class SocialProfile extends Component {
   }
 
   render() {
-    return <span className="profile">{this.sortTab()}</span>;
+    return <div>{this.sortTab()}</div>;
   }
 }
 export default SocialProfile;

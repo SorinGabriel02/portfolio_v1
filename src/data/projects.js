@@ -5,24 +5,28 @@ import project3 from "../assets/project3.png";
 const PROJECTS = [
   {
     id: 1,
-    title: "Example React Application",
+    title: "Ravenous",
     description:
-      "A React APP that I built, involving JS and core dev concepts.",
-    link: "http://github.com/SorinGabriel02/example",
+      "React APP that is using the Yelp API and lets the user look for a type of business in a certain area.",
+    linkCode: "http://github.com/SorinGabriel02/raven",
+    linkLive: "https://soringabriel02.github.io/raven/",
     image: project1
   },
   {
     id: 2,
-    title: "My API",
-    description: "A REST API built from scratch with GET and POST requests.",
-    link: "http://github.com/SorinGabriel02/example",
+    title: "Jahming",
+    description:
+      "React web app that uses the Spotify API and lets the user search for tunes and create a Spotify playlist.",
+    linkCode: "http://github.com/SorinGabriel02/jahming",
+    linkLive: "http://jahming.surge.sh/",
     image: project2
   },
   {
     id: 3,
-    title: "OS Final Project",
-    description: "An OS final project",
-    link: "http://github.com/SorinGabriel02/example",
+    title: "Web site",
+    description: "Uploading soon",
+    linkCode: "#",
+    linkLive: "#",
     image: project3
   }
 ];
