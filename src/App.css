@@ -174,7 +174,7 @@ a:hover span:nth-child(4) {
   transition-delay: 0.75s;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .bio {
     max-width: 100%;
   }
