@@ -14,26 +14,21 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 3vh;
 }
 
 body {
   text-align: center;
-  font-size: 20px;
   font-family: "RobotoCondensed";
-  margin: 1%;
-  text-shadow: 0 10px 20px rgba(255, 253, 253, 0.11),
-    0 6px 6px rgba(255, 254, 254, 0.11);
+  text-shadow: 0 10px 20px rgba(255, 253, 253, 0.295),
+    0 6px 6px rgba(255, 254, 254, 0.295);
+  padding: 0;
+  margin: 0;
 }
 
 h1,
 h2,
 h3 {
   font-family: "EconomicaBold";
-}
-
-@media only screen and(max-width: 475px) {
-  html {
-    font-size: 10px;
-  }
+  text-shadow: 1px 1px 2px rgb(91, 123, 182);
 }

@@ -5,17 +5,17 @@ import twitterIcon from "../assets/twitter_icon.png";
 
 const SOCIAL_PROFILES = [
   {
-    id: 1,
+    id: 20,
     link: "mailto:gabi.portfolio02@gmail.com",
     image: emailIcon
   },
   {
-    id: 2,
+    id: 21,
     link: "https://github.com/SorinGabriel02",
     image: githubIcon
   },
   {
-    id: 3,
+    id: 22,
     link: "https://www.linkedin.com/in/sorin-gabriel-lupu-02",
     image: linkedinIcon
   },

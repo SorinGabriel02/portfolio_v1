@@ -24,7 +24,7 @@ const PROJECTS = [
   {
     id: 3,
     title: "Web site",
-    description: "Uploading soon",
+    description: "Updating soon...",
     linkCode: "#",
     linkLive: "#",
     image: project3

@@ -8,7 +8,7 @@ class Projects extends Component {
     return (
       <article>
         <h2>Highlighted Projects</h2>
-        <div>
+        <div className="projectsSection">
           {PROJECTS.map(project => {
             return <Project key={project.id} project={project} />;
           })}

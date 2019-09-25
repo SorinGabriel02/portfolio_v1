@@ -1,3 +1,27 @@
 article {
-  padding: 1%;
+  display: flex;
+  position: relative;
+  top: 1.2em;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-image: url("../../assets/background-projects.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+article h2 {
+  font-size: 3.8vmax;
+  padding: 2%;
+  text-align: center;
+  text-shadow: 2px 2px #6fafe4de, -0.2em 0 0.2em #6fafe4de;
+}
+
+article img {
+  align-self: center;
+}
+
+.projectsSection {
+  display: flex;
+  flex-direction: column;
 }

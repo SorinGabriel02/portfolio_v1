@@ -37,7 +37,7 @@ class App extends Component {
                 <span>o</span>
                 <span>!</span>
               </h1>
-              <h3 style={{ fontSize: "2.5rem" }}>
+              <h3 style={{ fontSize: "4vmax" }}>
                 -->My name is Gabriel Lupu,
                 <br />
                 and I'm a web developer.{"<--"}
@@ -53,7 +53,10 @@ class App extends Component {
               options={{ reverse: false }}
             >
               <div className="headerCard">
-                <h3 className="headerCardContent">
+                <h3
+                  className="headerCardContent"
+                  style={{ fontSize: "2.5vmax" }}
+                >
                   {ifHeaderZero}
                   <br />
 
@@ -102,8 +105,9 @@ class App extends Component {
             </div>
           )}
         </header>
-        <hr id="projects" />
+        <a id="projects"></a>
         <Projects />
+        <a id="contact"></a>
         <SocialProfiles />
       </div>
     );

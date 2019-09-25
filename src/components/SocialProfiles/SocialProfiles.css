@@ -1,9 +1,11 @@
 .socialProfiles {
   display: flex;
   justify-content: space-around;
+  position: relative;
+  padding-top: 0.3em;
+  top: -0.2em;
   min-width: 100%;
-  background-color: rgb(29, 91, 161);
-  padding: 1%;
+  background-color: rgb(0, 0, 0);
   flex-shrink: 2;
 }
 
@@ -11,6 +13,19 @@
   display: inline-flex;
   min-width: 70%;
   justify-content: space-around;
+}
+
+footer h3 {
+  color: #2196f3;
+}
+
+footer h3:hover {
+  color: #255784;
+  background: #2196f3;
+  text-decoration: none;
+  box-shadow: 0 0 1rem #2196f3, 0 0 4rem #2196f3, 0 0 8rem #2196f3;
+  transition-delay: 0.75s;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 486px) {

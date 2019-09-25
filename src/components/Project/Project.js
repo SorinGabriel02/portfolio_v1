@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Project.css";
-import { Button } from "react-bootstrap";
 
 class Project extends Component {
   render() {
@@ -13,16 +12,43 @@ class Project extends Component {
     } = this.props.project;
 
     return (
-      <div className="project">
+      <div className="projectCard">
         <h3>{title}</h3>
-        <img src={image} alt="project showcase" />
+        <a
+          href={linkLive}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ maxWidth: "85%", alignSelf: "center" }}
+        >
+          <img src={image} />
+        </a>
         <p>{description}</p>
-        <a href={linkCode} target="_blank" rel="noopener noreferrer">
-          <Button>Code</Button>
-        </a>
-        <a href={linkLive} target="_blank" rel="noopener noreferrer">
-          <Button>Live</Button>
-        </a>
+        <div className="links">
+          <a
+            href={linkCode}
+            style={{ textDecoration: "none", color: "whitesmoke" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Code
+          </a>
+          <a
+            href={linkLive}
+            style={{ textDecoration: "none", color: "whitesmoke" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Live
+          </a>
+        </div>
       </div>
     );
   }

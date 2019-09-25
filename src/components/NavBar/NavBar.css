@@ -1,8 +1,7 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #000000;
 }
 .ml-auto {
   max-width: 60%;
   text-align: center;
-  padding: 1%;
 }
