@@ -31,3 +31,8 @@
   padding-top: 0.5em;
   align-self: center;
 }
+
+.links a {
+  padding: 1% 4%;
+  margin: 1%;
+}
