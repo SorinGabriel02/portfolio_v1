@@ -1,6 +1,6 @@
 @font-face {
   font-family: RobotoCondensed;
-  src: url(./assets/roboto-condensed.light.ttf);
+  src: url(./assets/roboto-condensed.bold.ttf);
   font-weight: 800;
 }
 
@@ -18,10 +18,7 @@ html {
 }
 
 body {
-  text-align: center;
   font-family: "RobotoCondensed";
-  text-shadow: 0 10px 20px rgba(255, 253, 253, 0.295),
-    0 6px 6px rgba(255, 254, 254, 0.295);
   padding: 0;
   margin: 0;
 }

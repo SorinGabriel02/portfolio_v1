@@ -45,11 +45,12 @@ class App extends Component {
             </div>
             <Tilt
               onClick={this.toggleDisplayBio}
+              className="headerCard"
               style={{
                 backgroundColor: "transparent",
-                margin: "2%"
+                margin: "2%",
+                maxWidth: "50vw"
               }}
-              className="headerCard"
               options={{ reverse: false }}
             >
               <div className="headerCard">
