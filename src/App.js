@@ -49,7 +49,8 @@ class App extends Component {
               style={{
                 backgroundColor: "transparent",
                 margin: "2%",
-                maxWidth: "50vw"
+                maxWidth: "50vw",
+                zIndex: 1
               }}
               options={{ reverse: false }}
             >

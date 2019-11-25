@@ -15,21 +15,13 @@
   justify-content: space-around;
 }
 
-footer h3 {
+footer h4 {
   color: #2196f3;
-}
-
-footer h3:hover {
-  color: #255784;
-  background: #2196f3;
-  text-decoration: none;
-  box-shadow: 0 0 1rem #2196f3, 0 0 4rem #2196f3, 0 0 8rem #2196f3;
-  transition-delay: 0.75s;
-  border-radius: 50%;
+  padding-top: 1vh;
 }
 
 @media only screen and (max-width: 486px) {
-  footer h3 {
+  footer h4 {
     display: none;
   }
 }

@@ -12,7 +12,7 @@ class NavBar extends Component {
         fixed="top"
         expand="lg"
       >
-        <Navbar.Brand href="#top">
+        <Navbar.Brand href="top">
           <span>--></span>
           <span></span>
           <span></span>
@@ -27,7 +27,7 @@ class NavBar extends Component {
               <span></span>
               <span></span>
               <span></span>
-              />Top
+              />About
             </Nav.Link>
             <Nav.Link href="#projects">
               <span>/></span>
